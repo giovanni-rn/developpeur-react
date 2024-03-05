@@ -25,10 +25,10 @@ function Translate() {
       };
 
       try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        setAvailableLang(result.data.languages)
-        console.log(result.data.languages);
+        // const response = await fetch(url, options);
+        // const result = await response.json();
+        // setAvailableLang(result.data.languages)
+        // console.log(result.data.languages);
         setAvailableLang([{ "language": "fr" }, { "language": "en" }, { "language": "es" }])
       } catch (error) {
         console.error(error);
@@ -56,9 +56,9 @@ function Translate() {
       };
 
       try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        setTarget(result.data.translations[0].translatedText);
+        // const response = await fetch(url, options);
+        // const result = await response.json();
+        // setTarget(result.data.translations[0].translatedText);
       } catch (error) {
         console.error(error);
       }
